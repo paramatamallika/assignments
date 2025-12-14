@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Todos</title></head>
+<body>
+<div id="navbar"></div>
+<h2>Todos</h2>
+<div id="todos"></div>
+
+
+<script type="module">
+import { Navbar } from "./scripts/navbar.js";
+document.getElementById("navbar").innerHTML = Navbar();
+</script>
+
+
+<script type="module" src="./scripts/todos.js"></script>
+</body>
+</html>

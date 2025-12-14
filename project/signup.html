@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Signup</title></head>
+<body>
+<div id="navbar"></div>
+
+
+<form id="signupForm">
+<input id="email" type="email" placeholder="Email" required />
+<input id="password" type="password" placeholder="Password" required />
+<button>Signup</button>
+</form>
+
+
+<script type="module">
+import { Navbar } from "./scripts/navbar.js";
+import { signup } from "./scripts/auth.js";
+
+
+document.getElementById("navbar").innerHTML = Navbar();
+document.getElementById("signupForm").addEventListener("submit", signup);
+</script>
+</body>
+</html>
